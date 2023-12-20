@@ -1,0 +1,529 @@
+{
+  "data": {
+    "Catalog": {
+      "searchStore": {
+        "elements": [
+          {
+            "title": "Destiny 2: Bungie 30th Anniversary Pack",
+            "id": "e7b9e222c7274dd28714aba2e06d2a01",
+            "namespace": "428115def4ca4deea9d69c99c5a5a99e",
+            "description": "The 30th Anniversary Pack includes a new Dungeon, Gjallarhorn Exotic Rocket Launcher, new weapons, armor, and much more.                    ",
+            "effectiveDate": "2022-08-23T13:00:00.000Z",
+            "offerType": "DLC",
+            "expiryDate": null,
+            "viewableDate": "2022-08-08T15:00:00.000Z",
+            "status": "ACTIVE",
+            "isCodeRedemptionOnly": false,
+            "keyImages": [
+              {
+                "type": "OfferImageTall",
+                "url": "https://cdn1.epicgames.com/offer/428115def4ca4deea9d69c99c5a5a99e/EGS_Destiny2Bungie30thAnniversaryPack_Bungie_AddOn_S2_1200x1600-b3a839aa9a80c15f609dab688e21190c"
+              },
+              {
+                "type": "OfferImageWide",
+                "url": "https://cdn1.epicgames.com/offer/428115def4ca4deea9d69c99c5a5a99e/EGS_Destiny2Bungie30thAnniversaryPack_Bungie_AddOn_S1_2560x1440-40e931364bcfa578a0b3b9daed1774bf"
+              },
+              {
+                "type": "ProductLogo",
+                "url": "https://cdn1.epicgames.com/offer/428115def4ca4deea9d69c99c5a5a99e/EGS_Destiny2Bungie30thAnniversaryPack_Bungie_AddOn_IC1_200x200-e15504d4fbafb743446e3a8dc52dffc4"
+              },
+              {
+                "type": "Thumbnail",
+                "url": "https://cdn1.epicgames.com/offer/428115def4ca4deea9d69c99c5a5a99e/EGS_Destiny2Bungie30thAnniversaryPack_Bungie_AddOn_S2_1200x1600-b3a839aa9a80c15f609dab688e21190c"
+              },
+              {
+                "type": "featuredMedia",
+                "url": "https://cdn1.epicgames.com/offer/428115def4ca4deea9d69c99c5a5a99e/EN_Bungie_Bungie_30th_Anniversary_Pack_S3_2560x1440_2560x1440-40e931364bcfa578a0b3b9daed1774bf"
+              },
+              {
+                "type": "featuredMedia",
+                "url": "https://cdn1.epicgames.com/offer/428115def4ca4deea9d69c99c5a5a99e/Screenshot1_1920x1080-37c070caa0106b08910518150bf96e94"
+              },
+              {
+                "type": "featuredMedia",
+                "url": "https://cdn1.epicgames.com/offer/428115def4ca4deea9d69c99c5a5a99e/Screenshot2_1920x1080-14490e3ec01dceedce23d870774b2393"
+              },
+              {
+                "type": "featuredMedia",
+                "url": "https://cdn1.epicgames.com/offer/428115def4ca4deea9d69c99c5a5a99e/Screenshot3_1920x1080-fdf882ad2cc98be7e63516b4ad28d6e9"
+              },
+              {
+                "type": "featuredMedia",
+                "url": "https://cdn1.epicgames.com/offer/428115def4ca4deea9d69c99c5a5a99e/Screenshot4_1920x1080-079d4e12a8a04b31f7d4def7f4b745e7"
+              },
+              {
+                "type": "featuredMedia",
+                "url": "https://cdn1.epicgames.com/offer/428115def4ca4deea9d69c99c5a5a99e/Screenshot5_1920x1080-f3c958c685629b6678544cba8bffc483"
+              },
+              {
+                "type": "featuredMedia",
+                "url": "https://cdn1.epicgames.com/offer/428115def4ca4deea9d69c99c5a5a99e/Screenshot6_1920x1080-f13bb310baf9c158d15d473474c11586"
+              },
+              {
+                "type": "featuredMedia",
+                "url": "https://cdn1.epicgames.com/offer/428115def4ca4deea9d69c99c5a5a99e/Screenshot7_1920x1080-6d2b714d2cfd64623cdcc39487d0b429"
+              },
+              {
+                "type": "featuredMedia",
+                "url": "https://cdn1.epicgames.com/offer/428115def4ca4deea9d69c99c5a5a99e/Screenshot8_1920x1080-0956ff1a3a4969d9a3f2b96d87bdc19d"
+              }
+            ],
+            "seller": {
+              "id": "o-49lqsefbl6zr5sy3ztak77ej97cuvh",
+              "name": "Bungie"
+            },
+            "productSlug": null,
+            "urlSlug": "destiny-2--bungie-30th-anniversary-pack",
+            "url": null,
+            "items": [
+              {
+                "id": "904b57fb8bcd41a6be6c690a92ab3c15",
+                "namespace": "428115def4ca4deea9d69c99c5a5a99e"
+              }
+            ],
+            "customAttributes": [],
+            "categories": [
+              { "path": "addons" },
+              { "path": "freegames" },
+              { "path": "addons/durable" },
+              { "path": "applications" }
+            ],
+            "tags": [{ "id": "1203" }, { "id": "1210" }, { "id": "1370" }],
+            "catalogNs": {
+              "mappings": [
+                { "pageSlug": "destiny-2", "pageType": "productHome" }
+              ]
+            },
+            "offerMappings": [
+              {
+                "pageSlug": "destiny-2--bungie-30th-anniversary-pack",
+                "pageType": "addon--cms-hybrid"
+              }
+            ],
+            "price": {
+              "totalPrice": {
+                "discountPrice": 29900,
+                "originalPrice": 29900,
+                "voucherDiscount": 0,
+                "discount": 0,
+                "currencyCode": "TRY",
+                "currencyInfo": { "decimals": 2 },
+                "fmtPrice": {
+                  "originalPrice": "TRY 299.00",
+                  "discountPrice": "TRY 299.00",
+                  "intermediatePrice": "TRY 299.00"
+                }
+              },
+              "lineOffers": [{ "appliedRules": [] }]
+            },
+            "promotions": {
+              "promotionalOffers": [],
+              "upcomingPromotionalOffers": []
+            }
+          },
+          {
+            "title": "Gloomhaven",
+            "id": "9232fdbc352445cc820a54bdc97ed2bb",
+            "namespace": "bc079f73f020432fac896d30c8e2c330",
+            "description": "Whether you are drawn to Gloomhaven by the call of adventure or by an avid desire for gold glimmering in the dark, your fate will surely be the same. Gloomhaven, the digital adaptation of the acclaimed board game, mixes Tactical-RPG and dungeon-crawling.",
+            "effectiveDate": "2022-09-22T15:00:00.000Z",
+            "offerType": "BASE_GAME",
+            "expiryDate": null,
+            "viewableDate": "2022-09-22T15:00:00.000Z",
+            "status": "ACTIVE",
+            "isCodeRedemptionOnly": false,
+            "keyImages": [
+              {
+                "type": "OfferImageWide",
+                "url": "https://cdn1.epicgames.com/spt-assets/ef2777467a3c49059a076e42fd9b41f0/gloomhaven-offer-1j9mc.jpg"
+              },
+              {
+                "type": "OfferImageTall",
+                "url": "https://cdn1.epicgames.com/spt-assets/ef2777467a3c49059a076e42fd9b41f0/download-gloomhaven-offer-1ho2x.jpg"
+              },
+              {
+                "type": "Thumbnail",
+                "url": "https://cdn1.epicgames.com/spt-assets/ef2777467a3c49059a076e42fd9b41f0/download-gloomhaven-offer-1ho2x.jpg"
+              }
+            ],
+            "seller": {
+              "id": "o-4x4bpaww55p5g3f6xpyqe2cneqxd5d",
+              "name": "Asmodee"
+            },
+            "productSlug": null,
+            "urlSlug": "0d48da287df14493a7415b560ec1bbb3",
+            "url": null,
+            "items": [
+              {
+                "id": "6047532dd78a456593d0ffd6602a7218",
+                "namespace": "bc079f73f020432fac896d30c8e2c330"
+              }
+            ],
+            "customAttributes": [
+              { "key": "autoGeneratedPrice", "value": "false" },
+              { "key": "isManuallySetViewableDate", "value": "true" },
+              { "key": "isManuallySetPCReleaseDate", "value": "true" },
+              { "key": "isBlockchainUsed", "value": "false" }
+            ],
+            "categories": [
+              { "path": "freegames" },
+              { "path": "games/edition/base" },
+              { "path": "games/edition" },
+              { "path": "games" }
+            ],
+            "tags": [
+              { "id": "29088" },
+              { "id": "21122" },
+              { "id": "1188" },
+              { "id": "21127" },
+              { "id": "19847" },
+              { "id": "21129" },
+              { "id": "1386" },
+              { "id": "9547" },
+              { "id": "9549" },
+              { "id": "1264" },
+              { "id": "21137" },
+              { "id": "21138" },
+              { "id": "21139" },
+              { "id": "21140" },
+              { "id": "21141" },
+              { "id": "1367" },
+              { "id": "22776" },
+              { "id": "1370" },
+              { "id": "24570" },
+              { "id": "1115" },
+              { "id": "21147" },
+              { "id": "21149" }
+            ],
+            "catalogNs": {
+              "mappings": [
+                { "pageSlug": "gloomhaven-92f741", "pageType": "productHome" }
+              ]
+            },
+            "offerMappings": [
+              { "pageSlug": "gloomhaven-92f741", "pageType": "productHome" }
+            ],
+            "price": {
+              "totalPrice": {
+                "discountPrice": 3540,
+                "originalPrice": 5900,
+                "voucherDiscount": 0,
+                "discount": 2360,
+                "currencyCode": "TRY",
+                "currencyInfo": { "decimals": 2 },
+                "fmtPrice": {
+                  "originalPrice": "TRY 59.00",
+                  "discountPrice": "TRY 35.40",
+                  "intermediatePrice": "TRY 35.40"
+                }
+              },
+              "lineOffers": [
+                {
+                  "appliedRules": [
+                    {
+                      "id": "dabaf5afe0954a4fa56420974323131e",
+                      "endDate": "2024-01-10T16:00:00.000Z",
+                      "discountSetting": { "discountType": "PERCENTAGE" }
+                    }
+                  ]
+                }
+              ]
+            },
+            "promotions": {
+              "promotionalOffers": [
+                {
+                  "promotionalOffers": [
+                    {
+                      "startDate": "2023-12-13T16:00:00.000Z",
+                      "endDate": "2024-01-10T16:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE",
+                        "discountPercentage": 60
+                      }
+                    }
+                  ]
+                }
+              ],
+              "upcomingPromotionalOffers": []
+            }
+          },
+          {
+            "title": "911 Operator",
+            "id": "268fd6ea355740d6ba4c76c3ffd4cbe0",
+            "namespace": "d923c737f0d243ccab407605ea40d39e",
+            "description": "A game about the difficult work of people that manage emergency services. Answer incoming calls and react properly - give first aid instructions, advise, dispatch the correct number of firemen/police/ambulances, or sometimes - just ignore the call. Play on ANY CITY in the world!",
+            "effectiveDate": "2023-09-14T15:00:00.000Z",
+            "offerType": "BASE_GAME",
+            "expiryDate": null,
+            "viewableDate": "2023-09-07T15:00:00.000Z",
+            "status": "ACTIVE",
+            "isCodeRedemptionOnly": false,
+            "keyImages": [
+              {
+                "type": "OfferImageWide",
+                "url": "https://cdn1.epicgames.com/spt-assets/c06cc46c27954f55974e9e7a4f3b3849/911-operator-omkv7.jpg"
+              },
+              {
+                "type": "OfferImageTall",
+                "url": "https://cdn1.epicgames.com/spt-assets/c06cc46c27954f55974e9e7a4f3b3849/911-operator-8dcp7.jpg"
+              },
+              {
+                "type": "Thumbnail",
+                "url": "https://cdn1.epicgames.com/spt-assets/c06cc46c27954f55974e9e7a4f3b3849/911-operator-8dcp7.jpg"
+              }
+            ],
+            "seller": {
+              "id": "o-8dv8wz77w8tqnymmm8e99p28eny7kg",
+              "name": "Games Operators S.A."
+            },
+            "productSlug": null,
+            "urlSlug": "ecb09cc5f55345e6bf6d3d9354c12876",
+            "url": null,
+            "items": [
+              {
+                "id": "07499df5530b45c3ad8464a96cbe26c7",
+                "namespace": "d923c737f0d243ccab407605ea40d39e"
+              }
+            ],
+            "customAttributes": [
+              { "key": "autoGeneratedPrice", "value": "false" },
+              { "key": "isManuallySetViewableDate", "value": "true" },
+              { "key": "isManuallySetPCReleaseDate", "value": "true" },
+              { "key": "isBlockchainUsed", "value": "false" }
+            ],
+            "categories": [
+              { "path": "freegames" },
+              { "path": "games" },
+              { "path": "games/edition" },
+              { "path": "games/edition/base" }
+            ],
+            "tags": [
+              { "id": "1393" },
+              { "id": "19847" },
+              { "id": "1370" },
+              { "id": "1115" },
+              { "id": "9547" },
+              { "id": "1263" }
+            ],
+            "catalogNs": {
+              "mappings": [
+                { "pageSlug": "911-operator-585edd", "pageType": "productHome" }
+              ]
+            },
+            "offerMappings": [
+              { "pageSlug": "911-operator-585edd", "pageType": "productHome" }
+            ],
+            "price": {
+              "totalPrice": {
+                "discountPrice": 11500,
+                "originalPrice": 11500,
+                "voucherDiscount": 0,
+                "discount": 0,
+                "currencyCode": "TRY",
+                "currencyInfo": { "decimals": 2 },
+                "fmtPrice": {
+                  "originalPrice": "TRY 115.00",
+                  "discountPrice": "TRY 115.00",
+                  "intermediatePrice": "TRY 115.00"
+                }
+              },
+              "lineOffers": [{ "appliedRules": [] }]
+            },
+            "promotions": null
+          },
+          {
+            "title": "Destiny 2: Legacy Collection",
+            "id": "1b407c729763439aa8d8c6874f1cfb6e",
+            "namespace": "d5241c76f178492ea1540fce45616757",
+            "description": "Destiny 2: Legacy Collection",
+            "effectiveDate": "2023-12-13T16:00:00.000Z",
+            "offerType": "OTHERS",
+            "expiryDate": "2023-12-20T16:00:00.000Z",
+            "viewableDate": "2023-12-07T15:25:00.000Z",
+            "status": "ACTIVE",
+            "isCodeRedemptionOnly": true,
+            "keyImages": [
+              {
+                "type": "DieselStoreFrontWide",
+                "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/Free-Game-1_1920x1080-d0877708418750425ae12a2bddae3277"
+              },
+              {
+                "type": "VaultClosed",
+                "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/Free-Game-1-16x9_1920x1080-10ac06e6d21704745c2ac290768e1a96"
+              }
+            ],
+            "seller": {
+              "id": "o-ufmrk5furrrxgsp5tdngefzt5rxdcn",
+              "name": "Epic Dev Test Account"
+            },
+            "productSlug": "destiny-2--legacy-collection-2023",
+            "urlSlug": "mysterygame-1",
+            "url": null,
+            "items": [
+              {
+                "id": "8341d7c7e4534db7848cc428aa4cbe5a",
+                "namespace": "d5241c76f178492ea1540fce45616757"
+              }
+            ],
+            "customAttributes": [
+              {
+                "key": "com.epicgames.app.freegames.vault.close",
+                "value": "[]"
+              },
+              { "key": "com.epicgames.app.blacklist", "value": "[]" },
+              {
+                "key": "com.epicgames.app.freegames.vault.slug",
+                "value": "free-games"
+              },
+              {
+                "key": "com.epicgames.app.freegames.vault.open",
+                "value": "[]"
+              },
+              {
+                "key": "com.epicgames.app.productSlug",
+                "value": "destiny-2--legacy-collection-2023"
+              }
+            ],
+            "categories": [
+              { "path": "freegames/vaulted" },
+              { "path": "freegames" },
+              { "path": "games" },
+              { "path": "applications" }
+            ],
+            "tags": [],
+            "catalogNs": { "mappings": [] },
+            "offerMappings": [],
+            "price": {
+              "totalPrice": {
+                "discountPrice": 0,
+                "originalPrice": 0,
+                "voucherDiscount": 0,
+                "discount": 0,
+                "currencyCode": "TRY",
+                "currencyInfo": { "decimals": 2 },
+                "fmtPrice": {
+                  "originalPrice": "0",
+                  "discountPrice": "0",
+                  "intermediatePrice": "0"
+                }
+              },
+              "lineOffers": [{ "appliedRules": [] }]
+            },
+            "promotions": {
+              "promotionalOffers": [
+                {
+                  "promotionalOffers": [
+                    {
+                      "startDate": "2023-12-13T16:00:00.000Z",
+                      "endDate": "2023-12-20T16:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE",
+                        "discountPercentage": 0
+                      }
+                    }
+                  ]
+                }
+              ],
+              "upcomingPromotionalOffers": []
+            }
+          },
+          {
+            "title": "Mystery Game Day 2",
+            "id": "824fca6e444b4223bbf275cfc0355282",
+            "namespace": "d5241c76f178492ea1540fce45616757",
+            "description": "Mystery Game Day 2",
+            "effectiveDate": "2099-01-01T16:00:00.000Z",
+            "offerType": "OTHERS",
+            "expiryDate": null,
+            "viewableDate": "2023-12-13T15:25:00.000Z",
+            "status": "ACTIVE",
+            "isCodeRedemptionOnly": true,
+            "keyImages": [
+              {
+                "type": "DieselStoreFrontWide",
+                "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/Free-Game-2-teaser_1920x1080-38e83b583656dfb7b3d290a44cdfc6e8"
+              },
+              {
+                "type": "VaultClosed",
+                "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/Free-Game-2-teaser_1920x1080-38e83b583656dfb7b3d290a44cdfc6e8"
+              }
+            ],
+            "seller": {
+              "id": "o-ufmrk5furrrxgsp5tdngefzt5rxdcn",
+              "name": "Epic Dev Test Account"
+            },
+            "productSlug": "[]",
+            "urlSlug": "mysterygame-2",
+            "url": null,
+            "items": [
+              {
+                "id": "8341d7c7e4534db7848cc428aa4cbe5a",
+                "namespace": "d5241c76f178492ea1540fce45616757"
+              }
+            ],
+            "customAttributes": [
+              {
+                "key": "com.epicgames.app.freegames.vault.close",
+                "value": "[]"
+              },
+              { "key": "com.epicgames.app.blacklist", "value": "[]" },
+              {
+                "key": "com.epicgames.app.freegames.vault.slug",
+                "value": "sales-and-specials/holiday-sale"
+              },
+              {
+                "key": "com.epicgames.app.freegames.vault.open",
+                "value": "[]"
+              },
+              { "key": "com.epicgames.app.productSlug", "value": "[]" }
+            ],
+            "categories": [
+              { "path": "freegames/vaulted" },
+              { "path": "freegames" },
+              { "path": "games" },
+              { "path": "applications" }
+            ],
+            "tags": [],
+            "catalogNs": { "mappings": [] },
+            "offerMappings": [],
+            "price": {
+              "totalPrice": {
+                "discountPrice": 0,
+                "originalPrice": 0,
+                "voucherDiscount": 0,
+                "discount": 0,
+                "currencyCode": "TRY",
+                "currencyInfo": { "decimals": 2 },
+                "fmtPrice": {
+                  "originalPrice": "0",
+                  "discountPrice": "0",
+                  "intermediatePrice": "0"
+                }
+              },
+              "lineOffers": [{ "appliedRules": [] }]
+            },
+            "promotions": {
+              "promotionalOffers": [],
+              "upcomingPromotionalOffers": [
+                {
+                  "promotionalOffers": [
+                    {
+                      "startDate": "2023-12-20T16:00:00.000Z",
+                      "endDate": "2023-12-21T16:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE",
+                        "discountPercentage": 0
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "paging": { "count": 1000, "total": 5 }
+      }
+    }
+  },
+  "extensions": {}
+}
