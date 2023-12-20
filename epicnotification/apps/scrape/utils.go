@@ -1,4 +1,0 @@
-package scrape
-
-func extractToMem() {
-}

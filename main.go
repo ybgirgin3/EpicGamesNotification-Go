@@ -1,19 +1,45 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+	"net/http"
 
 	"epicnotification/epicnotification/apps/scrape"
+	"epicnotification/epicnotification/utils"
 )
 
 func main() {
+	port := 8080
+	fmt.Println("Running in http://localhost:8080")
+	http.HandleFunc("/scrape/epicgames", scrapeEndpoint)
+
+	err := http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
+	if err != nil {
+		fmt.Println("ERRROOROROR", err)
+	}
+
+}
+
+func scrapeEndpoint(w http.ResponseWriter, r *http.Request) {
 
 	var url = "https://store-site-backend-static-ipv4.ak.epicgames.com/freeGamesPromotions?locale=en-US&country=TR&allowCountries=TR"
-	// fmt.Println("headers:", reflect.TypeOf(headers))
-	scrapeResult, scraperError := scrape.Scraper(url)
-	if scraperError != nil {
-		err := fmt.Errorf("error in scraper response: %s", scraperError)
-		fmt.Println(err)
+	res, err := scrape.Scraper(url) // get response as string
+	if err != nil {
+		fmt.Println(
+			fmt.Errorf("error in scraper response: %s", err),
+		)
 	}
-	fmt.Println(*scrapeResult)
+
+	// do extract
+	extracted := utils.ExtractData(res)
+
+	jsonData, err := json.Marshal(extracted)
+	if err != nil {
+		http.Error(w, "Error while converting response", http.StatusInternalServerError)
+		return
+	}
+
+	w.Write(jsonData)
+
 }

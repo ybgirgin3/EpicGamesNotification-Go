@@ -5,6 +5,9 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+
+	helpers "epicnotification/epicnotification/helpers"
+	"epicnotification/epicnotification/utils"
 )
 
 type Scrape struct {
@@ -12,30 +15,29 @@ type Scrape struct {
 	headers string
 }
 
-func Scraper(url string) (*ResponseStruct, error) {
-	scraperObject := Scrape{url, RequestHeaders}
+func Scraper(url string) (helpers.ApiResponse, error) {
+	scraperObject := Scrape{url, helpers.RequestHeaders}
 	result, err := scraperObject.PerformScrape()
 	return result, err
 
 }
 
-func (s Scrape) PerformScrape() (*ResponseStruct, error) {
+func (s Scrape) PerformScrape() (helpers.ApiResponse, error) {
 	// create request object
 	// var headers string
 	var url = s.url
-	var responseData ResponseStruct
 
 	// create request object
-	headers, err := createHeaders()
+	headers, err := utils.CreateHeaders()
 	if err != nil {
 		err := fmt.Errorf("unable to create headers object: %s", err)
-		return nil, err
+		return helpers.ApiResponse{}, err
 	}
 
 	request, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		err := fmt.Errorf("unable to create request object: %s", err)
-		return nil, err
+		return helpers.ApiResponse{}, err
 	}
 
 	request.Header = headers
@@ -45,44 +47,26 @@ func (s Scrape) PerformScrape() (*ResponseStruct, error) {
 	response, err := client.Do(request)
 	if err != nil {
 		err := fmt.Errorf("unable to send request: %s", err)
-		return nil, err
+		return helpers.ApiResponse{}, err
 	}
 	defer response.Body.Close()
 
 	// control status code
 	if response.StatusCode < 200 || response.StatusCode >= 300 {
-		return nil, fmt.Errorf("unexpected status code: %v", response.Status)
+		return helpers.ApiResponse{}, fmt.Errorf("unexpected status code: %v", response.Status)
 	}
 
 	// read body
 	body, err := io.ReadAll(response.Body)
 	if err != nil {
-		return nil, fmt.Errorf("error reading response body :%v", err)
-	}
-	_result := string(body)
-	fmt.Println("_result", _result)
-
-	err = json.Unmarshal(body, &responseData)
-	if err != nil {
-		return nil, fmt.Errorf("error exporting response body :%v", err)
+		return helpers.ApiResponse{}, fmt.Errorf("error reading response body :%v", err)
 	}
 
-	return &responseData, nil
-
-}
-
-func createHeaders() (http.Header, error) {
-	var headerMap map[string]string
-
-	err := json.Unmarshal([]byte(RequestHeaders), &headerMap)
-	if err != nil {
-		return nil, fmt.Errorf("error parsing json to headerset", err)
+	var result helpers.ApiResponse
+	if err := json.Unmarshal(body, &result); err != nil {
+		fmt.Println("Can not unmarshall JSON")
 	}
+	// fmt.Println("result:", result, "typeof result:", reflect.TypeOf(result))
 
-	// make headers
-	headers := make(http.Header)
-	for key, value := range headerMap {
-		headers.Add(key, value)
-	}
-	return headers, nil
+	return result, nil
 }
