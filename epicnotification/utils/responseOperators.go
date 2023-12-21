@@ -1,8 +1,6 @@
 package utils
 
 import (
-	"fmt"
-	"reflect"
 	"time"
 
 	"epicnotification/epicnotification/helpers"
@@ -23,8 +21,6 @@ func ExtractData(response helpers.ApiResponse) []Sanitized {
 	// var sanitizedResponse Sanitized
 	elements := response.Data.Catalog.SearchStore.Elements
 
-	fmt.Println("type of elements:", reflect.TypeOf(elements))
-
 	var resp []Sanitized
 	var baseUrl string = "https://store.epicgames.com/en-US/p"
 
@@ -42,7 +38,6 @@ func ExtractData(response helpers.ApiResponse) []Sanitized {
 		})
 	}
 
-	fmt.Println("type of sanitized list", resp)
 	return resp
 }
 
@@ -71,9 +66,7 @@ func createLink(index int, baseURL string, d helpers.ApiResponse) string {
 	}
 
 	if str, ok := slug.(string); ok {
-		fmt.Println("converted slug is here", str)
-		asd := baseURL + "/" + str
-		return asd
+		return baseURL + "/" + str
 	} else {
 		return baseURL
 	}
