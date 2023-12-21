@@ -10,6 +10,7 @@ type Sanitized struct {
 	Name          string `json:"name"`
 	EffectiveDate string `json:"effectiveData"`
 	OfferType     string `json:"offerType"`
+	Status        string `json:"status"`
 	StartDate     string `json:"startDate"`
 	ProductLink   string `json:"productLink"`
 	OriginalPrice string `json:"originalPrice"`
@@ -30,6 +31,7 @@ func ExtractData(response helpers.ApiResponse) []Sanitized {
 			Name:          val.Title,
 			EffectiveDate: isoToString(val.EffectiveDate),
 			OfferType:     val.OfferType,
+			Status:        val.Status,
 			StartDate:     startDate(index, response),
 			ProductLink:   createLink(index, baseUrl, response),
 			OriginalPrice: val.Price.TotalPrice.FmtPrice.OriginalPrice,

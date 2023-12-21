@@ -10,11 +10,17 @@ import (
 )
 
 func main() {
-	port := 8080
+	// definitions
+	port := ":8080"
+
+	// logs
 	fmt.Println("Running in http://localhost:8080")
+	fmt.Println("available routes: http://localhost:8080/scrape/epicgames")
+
+	// routes
 	http.HandleFunc("/scrape/epicgames", scrapeEndpoint)
 
-	err := http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
+	err := http.ListenAndServe(port, nil)
 	if err != nil {
 		fmt.Println("ERRROOROROR", err)
 	}
