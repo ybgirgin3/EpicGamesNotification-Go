@@ -17,7 +17,7 @@ func main() {
 
 	// routes
 	http.HandleFunc("/", routes.HomeRoute)
-	http.HandleFunc("/scrape/epic", routes.EpicGamesRoute)
+	http.HandleFunc("/scrape/epicgames", routes.EpicGamesRoute)
 
 	err := http.ListenAndServe(port, nil)
 	if err != nil {
