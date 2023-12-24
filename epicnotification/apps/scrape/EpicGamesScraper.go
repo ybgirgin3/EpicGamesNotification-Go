@@ -15,7 +15,7 @@ type Scrape struct {
 	headers string
 }
 
-func Scraper(url string) (helpers.ApiResponse, error) {
+func EpicGamesScraper(url string) (helpers.ApiResponse, error) {
 	scraperObject := Scrape{url, helpers.RequestHeaders}
 	result, err := scraperObject.PerformScrape()
 	return result, err
