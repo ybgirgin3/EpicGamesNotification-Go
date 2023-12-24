@@ -1,7 +1,6 @@
 package scrape
 
 import (
-	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
@@ -52,6 +51,8 @@ func (s Scrape) PerformScrape() (helpers.ApiResponse, error) {
 	}
 	defer response.Body.Close()
 
+	fmt.Println(" type of response in epic", reflect.TypeOf(response))
+
 	// control status code
 	if response.StatusCode < 200 || response.StatusCode >= 300 {
 		return helpers.ApiResponse{}, fmt.Errorf("unexpected status code: %v", response.Status)
@@ -63,8 +64,10 @@ func (s Scrape) PerformScrape() (helpers.ApiResponse, error) {
 		return helpers.ApiResponse{}, fmt.Errorf("error reading response body :%v", err)
 	}
 
+	fmt.Println("type of body", reflect.TypeOf(body))
+
 	var result helpers.ApiResponse
-	if err := json.Unmarshal(body, &result); err != nil {
+	if err := utils.FromJSON(body, &result); err != nil {
 		fmt.Println("Can not unmarshall JSON")
 	}
 
