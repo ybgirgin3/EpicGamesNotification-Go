@@ -1,6 +1,6 @@
 package helpers
 
-var RequestHeaders = `{
+var EpicGamesRequestHeaders = `{
 		"accept": "application/json, text/plain, */*",
 		"accept-language": "en-US,en;q=0.9",
 		"sec-ch-ua": "\"Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99\"",
