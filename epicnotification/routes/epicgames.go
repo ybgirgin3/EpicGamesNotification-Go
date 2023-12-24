@@ -6,11 +6,12 @@ import (
 	"net/http"
 
 	"epicnotification/epicnotification/apps/scrape"
-	"epicnotification/epicnotification/utils"
+	urls "epicnotification/epicnotification/utils"
+	"epicnotification/epicnotification/utils/epicgames"
 )
 
 func EpicGamesRoute(w http.ResponseWriter, r *http.Request) {
-	var url = "https://store-site-backend-static-ipv4.ak.epicgames.com/freeGamesPromotions?locale=en-US&country=TR&allowCountries=TR"
+	var url = urls.BackendURLs["epic-games"]
 	res, err := scrape.EpicGamesScraper(url) // get response as string
 	if err != nil {
 		fmt.Println(
@@ -19,7 +20,7 @@ func EpicGamesRoute(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// do extract
-	extracted := utils.ExtractData(res)
+	extracted := epicgames.ExtractData(res)
 
 	jsonData, err := json.Marshal(extracted)
 	if err != nil {
