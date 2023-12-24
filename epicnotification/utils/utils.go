@@ -24,3 +24,11 @@ func CreateHeaders(requestHeaders string) (http.Header, error) {
 	}
 	return headers, nil
 }
+
+func ToJSON(data interface{}) ([]byte, error) {
+	return json.Marshal(data)
+}
+
+func FromJSON(jsonData []byte, v interface{}) error {
+	return json.Unmarshal(jsonData, v)
+}
