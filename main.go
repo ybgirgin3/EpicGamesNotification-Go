@@ -18,6 +18,7 @@ func main() {
 	// routes
 	http.HandleFunc("/", routes.HomeRoute)
 	http.HandleFunc("/scrape/epicgames", routes.EpicGamesRoute)
+	// http.HandleFunc("/scrape/wiki", routes.Wiki)
 
 	err := http.ListenAndServe(port, nil)
 	if err != nil {
