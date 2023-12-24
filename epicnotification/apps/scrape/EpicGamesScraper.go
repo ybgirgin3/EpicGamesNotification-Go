@@ -5,8 +5,9 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"reflect"
 
-	helpers "epicnotification/epicnotification/helpers"
+	"epicnotification/epicnotification/helpers"
 	"epicnotification/epicnotification/utils"
 )
 
@@ -16,19 +17,19 @@ type Scrape struct {
 }
 
 func EpicGamesScraper(url string) (helpers.ApiResponse, error) {
-	scraperObject := Scrape{url, helpers.RequestHeaders}
+	scraperObject := Scrape{url, helpers.EpicGamesRequestHeaders}
 	result, err := scraperObject.PerformScrape()
 	return result, err
-
 }
 
 func (s Scrape) PerformScrape() (helpers.ApiResponse, error) {
 	// create request object
-	// var headers string
 	var url = s.url
+	var jsonHeaders = s.headers
+	fmt.Println("TYPE OF HEADERS", reflect.TypeOf(jsonHeaders))
 
 	// create request object
-	headers, err := utils.CreateHeaders()
+	headers, err := utils.CreateHeaders(jsonHeaders)
 	if err != nil {
 		err := fmt.Errorf("unable to create headers object: %s", err)
 		return helpers.ApiResponse{}, err
@@ -66,7 +67,6 @@ func (s Scrape) PerformScrape() (helpers.ApiResponse, error) {
 	if err := json.Unmarshal(body, &result); err != nil {
 		fmt.Println("Can not unmarshall JSON")
 	}
-	// fmt.Println("result:", result, "typeof result:", reflect.TypeOf(result))
 
 	return result, nil
 }
