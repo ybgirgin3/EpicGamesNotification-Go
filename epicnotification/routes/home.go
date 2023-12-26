@@ -8,6 +8,7 @@ import (
 func HomeRoute(w http.ResponseWriter, r *http.Request) {
 	scrapeRoutes := map[string]interface{}{
 		"EpicGames": "http://localhost:8080/scrape/epicgames",
+		"Wikipedia": "http://localhost:8080/scrape/wiki",
 	}
 	routes := map[string]interface{}{
 		"home":   "http://localhost:8080",

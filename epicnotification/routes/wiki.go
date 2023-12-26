@@ -16,7 +16,11 @@ type PokemonProduct struct {
 	url, image, name, price string
 }
 
-func (s Scrape) Wiki(w http.ResponseWriter, r *http.Request) {
+func WikiScraper(url string) {
+}
+
+func (s Scrape) PerformScrape(w http.ResponseWriter, r *http.Request) {
+
 	// definitions
 	var url = s.url
 	c := colly.NewCollector()
@@ -63,7 +67,7 @@ func (s Scrape) Wiki(w http.ResponseWriter, r *http.Request) {
 		pokemonProduct.url = e.ChildAttr("a", "href")
 		pokemonProduct.image = e.ChildAttr("img", "src")
 		pokemonProduct.name = e.ChildText("h2")
-		pokemonProduct.name = e.ChildText(".price")
+		pokemonProduct.price = e.ChildText(".price")
 
 		pokemonProducts = append(pokemonProducts, pokemonProduct)
 	})
@@ -98,4 +102,10 @@ func (s Scrape) Wiki(w http.ResponseWriter, r *http.Request) {
 
 	defer writer.Flush()
 
+}
+
+func WikiRoute(w http.ResponseWriter, r *http.Request) {
+	var url = "https://scrapeme.live/shop/"
+	scraperObject := Scrape{url}
+	scraperObject.PerformScrape(w, r) // it's return nothing
 }

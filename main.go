@@ -14,11 +14,12 @@ func main() {
 	// logs
 	fmt.Println("Running in http://localhost:8080")
 	fmt.Println("available routes: http://localhost:8080/scrape/epicgames")
+	fmt.Println("available routes: http://localhost:8080/scrape/wiki")
 
 	// routes
 	http.HandleFunc("/", routes.HomeRoute)
 	http.HandleFunc("/scrape/epicgames", routes.EpicGamesRoute)
-	// http.HandleFunc("/scrape/wiki", routes.Wiki)
+	http.HandleFunc("/scrape/wiki", routes.WikiRoute)
 
 	err := http.ListenAndServe(port, nil)
 	if err != nil {
