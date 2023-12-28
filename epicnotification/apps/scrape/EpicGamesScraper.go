@@ -10,21 +10,21 @@ import (
 	"epicnotification/epicnotification/utils"
 )
 
-type Scrape struct {
+type ES struct {
 	url     string
 	headers string
 }
 
 func EpicGamesScraper(url string) (helpers.ApiResponse, error) {
-	scraperObject := Scrape{url, helpers.EpicGamesRequestHeaders}
+	scraperObject := ES{url, helpers.EpicGamesRequestHeaders}
 	result, err := scraperObject.PerformScrape()
 	return result, err
 }
 
-func (s Scrape) PerformScrape() (helpers.ApiResponse, error) {
+func (s ES) PerformScrape() (helpers.ApiResponse, error) {
 	// create request object
-	var url = s.url
-	var jsonHeaders = s.headers
+	url := s.url
+	jsonHeaders := s.headers
 	fmt.Println("TYPE OF HEADERS", reflect.TypeOf(jsonHeaders))
 
 	// create request object

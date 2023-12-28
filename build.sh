@@ -1,1 +1,1 @@
-go build -o epicg main.go
+go build -o gamescraper main.go
