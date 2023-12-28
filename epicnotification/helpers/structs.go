@@ -2,6 +2,15 @@ package helpers
 
 import "time"
 
+// type ApiScrapeStruct struct {
+// 	url     string
+// 	headers string
+// }
+//
+// type SiteParseStruct struct {
+// 	url string
+// }
+
 type ApiResponse struct {
 	Data struct {
 		Catalog struct {

@@ -7,15 +7,20 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// func HomeRoute(w http.ResponseWriter, r *http.Request) {
 func HomeRoute(c *gin.Context) {
-	scrapeRoutes := map[string]interface{}{
-		"EpicGames": "http://localhost:8080/scrape/epicgames",
-		"Wikipedia": "http://localhost:8080/scrape/wiki",
+	scrapeRoutesFunc := func(baseUrl string) interface{} {
+		return map[string]interface{}{
+			"EpicGames": baseUrl + "/scrape/epic-games",
+			"Wikipedia": baseUrl + "/scrape/wiki",
+			"Xbox":      baseUrl + "/scrape/xbox-gamepass",
+		}
 	}
+
+	base := "http://localhost:8080"
+
 	routes := map[string]interface{}{
-		"home":   "http://localhost:8080",
-		"scrape": scrapeRoutes,
+		"home":   base,
+		"scrape": scrapeRoutesFunc(base),
 	}
 
 	response, err := json.Marshal(routes)
